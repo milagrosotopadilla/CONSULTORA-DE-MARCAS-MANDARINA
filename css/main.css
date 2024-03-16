@@ -70,16 +70,14 @@ header .padd-0 {
   padding: 0;
 }
 
-.flex {
-  display: flex;
-  justify-content: center;
-}
-
 .bg-prim {
   --bs-primary-rgb: 235, 222, 240;
 }
-
-h1 {
+.bg-prim .flex {
+  display: flex;
+  justify-content: center;
+}
+.bg-prim h1 {
   font-family: "Kalam", cursive;
   color: #81073a;
   text-decoration: overline;
@@ -88,20 +86,74 @@ h1 {
   padding: 20px;
 }
 
-.dangch {
-  --bs-danger-rgb: 16, 95, 123 ;
+.main-contacto .formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../imagenes/patron-flores.png);
 }
 
-.titulo-principal {
-  color: #07814e;
+.main-trabaja .formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../imagenes/patron-flores.png);
 }
 
-.titulo-principal {
-  color: #07814e;
+.main-servicios .imagenes-internas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 25px;
 }
-.titulo-principal .texto-secundario {
-  font-size: 30px;
-  text-decoration: none;
+.main-servicios .imagenes-internas img {
+  width: 100%;
+  height: 180px;
+}
+.main-servicios .imagenes-internas h3 {
+  font-family: "Kalam", cursive;
+  color: #5a0529;
+  font-size: 20px;
+  text-align: center;
+}
+.main-servicios .imagenes-internas h4 {
+  font-family: "Kalam", cursive;
+  color: #270211;
+  font-size: 20px;
+  text-align: center;
+}
+.main-servicios .imagenes-internas .card {
+  width: 350px;
+  height: 380px;
+  border-radius: 20px 0px;
+  overflow: hidden;
+  box-shadow: 10px 12px 28px 0px black;
+}
+.main-servicios .imagenes-internas .card .card-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 130px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.main-portafolio .grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 300px);
+  margin: 1rem 3rem 3rem 3rem;
+  gap: 2rem;
+  background-color: #D2B4DE;
+  padding: 10px;
+}
+.main-portafolio .grid-galeria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 991px) {
@@ -113,7 +165,7 @@ h1 {
   }
 }
 @media screen and (max-width: 768px) {
-  .grid-galeria {
+  .main-portafolio .grid-galeria {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 400px);
     margin: 0;

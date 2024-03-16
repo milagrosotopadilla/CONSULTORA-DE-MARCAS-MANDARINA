@@ -9,11 +9,12 @@
 }
 
 @media screen and (max-width: 768px) {
+    .main-portafolio{
     .grid-galeria {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 400px);
         margin: 0;
-    }
+    }}
 
     .imgcapyws {
         width: 100%;

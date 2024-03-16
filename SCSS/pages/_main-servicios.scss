@@ -1,3 +1,40 @@
-.titulo-principal {
-    color: #07814e;
+.main-servicios{
+    .imagenes-internas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        row-gap: 25px;  
+        img {
+            width: 100%;
+            height: 180px;
+        }
+        h3{
+            font-family: 'Kalam', cursive;
+            color: #5a0529;
+            font-size: 20px;
+            text-align: center;  
+        }
+        h4 {
+            font-family: 'Kalam', cursive;
+            color: #270211;
+            font-size: 20px;
+            text-align: center;
+        }
+        .card{
+            width: 350px;
+            height: 380px;
+            border-radius: 20px 0px;
+            overflow: hidden;
+            box-shadow: 10px 12px 28px 0px black;
+            .card-texto{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                height: 130px;
+                justify-content: center;
+                padding: 10px;
+            }
+        }
+    }
 }
