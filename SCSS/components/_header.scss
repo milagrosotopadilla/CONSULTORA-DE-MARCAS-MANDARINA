@@ -1,0 +1,51 @@
+header {
+    background-image: url(../imagenes/imagen-de-fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .bg-0 {
+        --bs-bg-opacity: 0;
+    }
+
+    .menu {
+        flex-grow: 0;
+
+        .menu-ul {
+            column-gap: 10px;
+            align-items: center;
+        }
+
+        ul {
+            li {
+                a {
+                    color: #5a0529;
+                    font-size: 25px;
+                    text-decoration: none;
+                    padding: 20px;
+
+                    &:hover {
+                        color: #ff00ff36;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .menu-icon {
+        background-image: url(../imagenes/menu\ hamburguesa.svg);
+    }
+
+    .menu-button {
+        border: none;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .padd-0 {
+        padding: 0;
+    }
+}
