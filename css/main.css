@@ -70,14 +70,14 @@ header .padd-0 {
   padding: 0;
 }
 
-.bg-prim {
+.main-index {
   --bs-primary-rgb: 235, 222, 240;
 }
-.bg-prim .flex {
+.main-index .flex {
   display: flex;
   justify-content: center;
 }
-.bg-prim h1 {
+.main-index h1 {
   font-family: "Kalam", cursive;
   color: #81073a;
   text-decoration: overline;
