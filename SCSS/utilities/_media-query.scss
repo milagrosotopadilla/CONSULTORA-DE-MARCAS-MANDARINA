@@ -1,0 +1,21 @@
+
+@media screen and (max-width: 991px) {
+    .menu {
+        position: absolute;
+        top: 152px;
+        background-color: aliceblue;
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid-galeria {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 400px);
+        margin: 0;
+    }
+
+    .imgcapyws {
+        width: 100%;
+    }
+}

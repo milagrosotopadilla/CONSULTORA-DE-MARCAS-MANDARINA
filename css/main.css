@@ -1,17 +1,126 @@
-/* Error: expected ";".
- *   ,
- * 3 | @import "components/header"
- *   |                            ^
- *   '
- *   scss\main.scss 3:28  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected ";".\a   \2577 \a 3 \2502  @import "components/header"\d\a   \2502                             ^\a   \2575 \a   scss\\main.scss 3:28  root stylesheet';
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/*estilos globales*/
+html {
+  font-family: "Kalam", cursive;
+  background-color: #eff7f6;
+}
+
+.titulo-principal {
+  color: #07814e;
+}
+
+.texto-secundario {
+  font-size: 30px;
+  text-decoration: none;
+}
+
+section h2 {
+  text-align: center;
+  background-color: #590d22;
+  color: white;
+  width: 100%;
+}
+
+.bg-sec {
+  --bs-secondary-rgb: 213, 219, 219 ;
+}
+
+header {
+  background-image: url(../imagenes/imagen-de-fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+header .bg-0 {
+  --bs-bg-opacity: 0;
+}
+header .menu {
+  flex-grow: 0;
+}
+header .menu .menu-ul {
+  column-gap: 10px;
+  align-items: center;
+}
+header .menu ul li a {
+  color: #5a0529;
+  font-size: 25px;
+  text-decoration: none;
+  padding: 20px;
+}
+header .menu ul li a:hover {
+  color: rgba(255, 0, 255, 0.2117647059);
+  text-decoration: underline;
+}
+header .menu-icon {
+  background-image: url(../imagenes/menu\ hamburguesa.svg);
+}
+header .menu-button {
+  border: none;
+}
+header .menu-button:focus {
+  box-shadow: none;
+}
+header .padd-0 {
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.bg-prim {
+  --bs-primary-rgb: 235, 222, 240;
+}
+
+h1 {
+  font-family: "Kalam", cursive;
+  color: #81073a;
+  text-decoration: overline;
+  font-size: 50px;
+  text-align: center;
+  padding: 20px;
+}
+
+.dangch {
+  --bs-danger-rgb: 16, 95, 123 ;
+}
+
+.titulo-principal {
+  color: #07814e;
+}
+
+.titulo-principal {
+  color: #07814e;
+}
+.titulo-principal .texto-secundario {
+  font-size: 30px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 991px) {
+  .menu {
+    position: absolute;
+    top: 152px;
+    background-color: aliceblue;
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .grid-galeria {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 400px);
+    margin: 0;
+  }
+  .imgcapyws {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
