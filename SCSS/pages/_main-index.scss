@@ -6,10 +6,19 @@
     }
     h1 {
         font-family: 'Kalam', cursive;
-        color: #81073a;
+        color: $color-principal;
         text-decoration: overline;
         font-size: 50px;
         text-align: center;
         padding: 20px;
     }
+    .col-md-12{
+        font-size: 30px;
+        text-decoration: none;
+        text-align: center;
+        background-color: palevioletred;
+        color: white;
+        width: 100%;
+    }
+
 }

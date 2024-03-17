@@ -1,10 +1,3 @@
-/*reset*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /*estilos globales*/
 html {
   font-family: "Kalam", cursive;
@@ -18,17 +11,21 @@ html {
 .texto-secundario {
   font-size: 30px;
   text-decoration: none;
-}
-
-section h2 {
   text-align: center;
-  background-color: #590d22;
+  background-color: palevioletred;
   color: white;
   width: 100%;
 }
 
 .bg-sec {
   --bs-secondary-rgb: 213, 219, 219 ;
+}
+
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
@@ -79,11 +76,19 @@ header .padd-0 {
 }
 .main-index h1 {
   font-family: "Kalam", cursive;
-  color: #81073a;
+  color: #5a0529;
   text-decoration: overline;
   font-size: 50px;
   text-align: center;
   padding: 20px;
+}
+.main-index .col-md-12 {
+  font-size: 30px;
+  text-decoration: none;
+  text-align: center;
+  background-color: palevioletred;
+  color: white;
+  width: 100%;
 }
 
 .main-contacto .formulario {
