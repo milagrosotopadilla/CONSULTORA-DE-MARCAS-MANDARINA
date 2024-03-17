@@ -139,10 +139,10 @@ header .padd-0 {
 .main-servicios .imagenes-internas .card .card-texto {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
   height: 130px;
-  justify-content: center;
   padding: 10px;
 }
 
@@ -159,6 +159,13 @@ header .padd-0 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+footer {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  gap: 50px;
 }
 
 @media screen and (max-width: 991px) {

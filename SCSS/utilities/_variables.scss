@@ -1,6 +1,6 @@
-//variables//
+//variables se llama con $//
 $color-principal: #5a0529;
-//listas//
+//listas se llaman con nth//
 $colores:
 #5a0529,
 palevioletred,
@@ -10,3 +10,10 @@ rgba(255, 0, 255, 0.2117647059),
 #D2B4DE,
 aliceblue,
 #eff7f6;
+//mapas map-get//
+$boton-primario:(
+    bg-primario:#D2B4DE,
+    texto-primario: #ffffff,
+    width-primario: 150px,
+    border-primario: 2px solid red
+);
