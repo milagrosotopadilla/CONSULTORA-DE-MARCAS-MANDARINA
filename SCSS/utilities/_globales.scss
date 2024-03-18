@@ -4,16 +4,11 @@ html {
     background-color: #eff7f6;
 }
 .titulo-principal {
-    color: #07814e;
+    color: nth($list: $colores, $n:3 );
 }
 
 .texto-secundario {
-    font-size: 30px;
-    text-decoration: none;
-    text-align: center;
-    background-color: palevioletred;
-    color: white;
-    width: 100%;
+    @extend %estilos;
 }
 .bg-sec {
     --bs-secondary-rgb: 213, 219, 219
