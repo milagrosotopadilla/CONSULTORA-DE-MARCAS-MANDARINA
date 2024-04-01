@@ -1,4 +1,10 @@
 .main-contacto {
+    .efecto-gradiente{
+        margin-top: 10px;
+        height: 40px;
+        background: linear-gradient(to right, #348f50, #56b4d3);
+    }
+
     
         .formulario {
             display: flex;
@@ -7,4 +13,8 @@
             align-items: center;
             background-image: url(../imagenes/patron-flores.png);
         }
+        .form-control{
+            background: radial-gradient(rgb(238, 231, 231),rgb(245, 218, 222),)
+        }
     }
+

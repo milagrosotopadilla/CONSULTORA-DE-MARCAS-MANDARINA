@@ -3,9 +3,26 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-
+    top: 100%;
     .bg-0 {
         --bs-bg-opacity: 0;
+    }
+    .icono-mandarina{
+            position: absolute;
+            top: 115px;
+            left: 55px;
+        height: 40px;
+        width: 40px;
+        animation-name: icono-mandarina;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes icono-mandarina {
+        0%{transform: rotate(0);}
+        100%{transform: rotate(360deg);}
+    }
+    .custom-icon{
+        font-size: 70px;
     }
 
     .menu {
@@ -32,7 +49,6 @@ header {
             }
         }
     }
-
     .menu-icon {
         background-image: url(../imagenes/menu\ hamburguesa.svg);
     }
@@ -49,4 +65,15 @@ header {
     .padd-0 {
         padding: 0;
     }
+
+}
+.navbar-toggler{
+    width: 200px;
+}
+.p-3 {
+    padding: 0 !important;
+    padding-top: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
 }

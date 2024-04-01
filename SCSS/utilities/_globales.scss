@@ -11,5 +11,5 @@ html {
     @extend %estilos;
 }
 .bg-sec {
-    --bs-secondary-rgb: 213, 219, 219
+    --bs-secondary-rgb: nth($list: $colores, $n:3 );
 }

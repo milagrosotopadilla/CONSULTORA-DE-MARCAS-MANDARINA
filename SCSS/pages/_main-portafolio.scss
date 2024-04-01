@@ -1,4 +1,9 @@
 .main-portafolio{
+    .efecto-gradiente{
+        margin-top: 10px;
+        height: 40px;
+        background: linear-gradient(to right, #348f50, #56b4d3);
+    }
     .grid-galeria{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -7,10 +12,153 @@
         gap: 2rem;
         background-color: map-get($map: $boton-primario, $key: bg-primario);
         padding: 10px;
+        div{
+            box-shadow: 10px,10px,16px,0px rgba(0,0,0,0.75);
+            border-radius: 5px;
+            overflow: hidden;
+        }
         img{
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+        .img1{
+            position: relative;
+        }
+        .texto1-portafolio{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255,255,255,0.749),rgba(255, 255, 255, 0.212));
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 15px;
+            opacity: 0;
+        }
+        .texto1-portafolio:hover{
+            opacity: 1;
+            transition: 1s;
+        }
+        .img2{
+            position: relative;
+        }
+        .texto2-portafolio{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255,255,255,0.749),rgba(255, 255, 255, 0.212));
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 15px;
+            opacity: 0;
+        }
+        .texto2-portafolio:hover{
+            opacity: 1;
+            transition: 1s;
+        }
+        .img3{
+            position: relative;
+        }
+        .texto3-portafolio{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255,255,255,0.749),rgba(255, 255, 255, 0.212));
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 15px;
+            opacity: 0;
+        }
+        .texto3-portafolio:hover{
+            opacity: 1;
+            transition: 1s;
+        }
+        .img4{
+            position: relative;
+        }
+        .texto4-portafolio{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255,255,255,0.749),rgba(255, 255, 255, 0.212));
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 15px;
+            opacity: 0;
+        }
+        .texto4-portafolio:hover{
+            opacity: 1;
+            transition: 1s;
+        }
+        .img5{
+            position: relative;
+        }
+        .texto5-portafolio{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255,255,255,0.749),rgba(255, 255, 255, 0.212));
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 15px;
+            opacity: 0;
+        }
+        .texto5-portafolio:hover{
+            opacity: 1;
+            transition: 1s;
+        }
+        .img6{
+            position: relative;
+        }
+        .texto6-portafolio{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255,255,255,0.749),rgba(255, 255, 255, 0.212));
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 15px;
+            opacity: 0;
+        }
+        .texto6-portafolio:hover{
+            opacity: 1;
+            transition: 1s;
         }
     }
 }

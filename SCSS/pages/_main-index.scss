@@ -6,18 +6,20 @@
     }
     h1 {
         font-family: 'Kalam', cursive;
-        color: $color-principal;
+        color: white;
         text-decoration: overline;
         font-size: 50px;
         text-align: center;
         padding: 20px;
+        background: linear-gradient(to right, #eec0dc, #75949e);
     }
+
     .col-md-12{
         font-size: 30px;
         text-decoration: none;
         text-align: center;
-        background-color: nth($list: $colores, $n:2 );
         color: white;
         width: 100%;
+        background: linear-gradient(to right, #348f50, #56b4d3);
     }
 }

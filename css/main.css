@@ -18,7 +18,7 @@ html {
 }
 
 .bg-sec {
-  --bs-secondary-rgb: 213, 219, 219 ;
+  --bs-secondary-rgb: nth($list: $colores, $n:3 );
 }
 
 /*reset*/
@@ -28,14 +28,41 @@ html {
   box-sizing: border-box;
 }
 
+.gradiente {
+  height: 50vh;
+  background: linear-gradient(to right, #ef32d9, #89fffd);
+}
+
 header {
   background-image: url(../imagenes/imagen-de-fondo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  top: 100%;
 }
 header .bg-0 {
   --bs-bg-opacity: 0;
+}
+header .icono-mandarina {
+  position: absolute;
+  top: 115px;
+  left: 55px;
+  height: 40px;
+  width: 40px;
+  animation-name: icono-mandarina;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes icono-mandarina {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+header .custom-icon {
+  font-size: 70px;
 }
 header .menu {
   flex-grow: 0;
@@ -67,6 +94,18 @@ header .padd-0 {
   padding: 0;
 }
 
+.navbar-toggler {
+  width: 200px;
+}
+
+.p-3 {
+  padding: 0 !important;
+  padding-top: 0 !important;
+  padding-right: 0 !important;
+  padding-bottom: 0 !important;
+  padding-left: 0 !important;
+}
+
 .main-index {
   --bs-primary-rgb: 235, 222, 240;
 }
@@ -76,21 +115,27 @@ header .padd-0 {
 }
 .main-index h1 {
   font-family: "Kalam", cursive;
-  color: #5a0529;
+  color: white;
   text-decoration: overline;
   font-size: 50px;
   text-align: center;
   padding: 20px;
+  background: linear-gradient(to right, #eec0dc, #75949e);
 }
 .main-index .col-md-12 {
   font-size: 30px;
   text-decoration: none;
   text-align: center;
-  background-color: palevioletred;
   color: white;
   width: 100%;
+  background: linear-gradient(to right, #348f50, #56b4d3);
 }
 
+.main-contacto .efecto-gradiente {
+  margin-top: 10px;
+  height: 40px;
+  background: linear-gradient(to right, #348f50, #56b4d3);
+}
 .main-contacto .formulario {
   display: flex;
   flex-direction: column;
@@ -98,7 +143,15 @@ header .padd-0 {
   align-items: center;
   background-image: url(../imagenes/patron-flores.png);
 }
+.main-contacto .form-control {
+  background: radial-gradient(rgb(238, 231, 231), rgb(245, 218, 222));
+}
 
+.main-trabaja .efecto-gradiente {
+  margin-top: 10px;
+  height: 40px;
+  background: linear-gradient(to right, #348f50, #56b4d3);
+}
 .main-trabaja .formulario {
   display: flex;
   flex-direction: column;
@@ -106,7 +159,20 @@ header .padd-0 {
   align-items: center;
   background-image: url(../imagenes/patron-flores.png);
 }
+.main-trabaja .form-control {
+  background: radial-gradient(rgb(238, 231, 231), rgb(245, 218, 222));
+}
 
+.main-servicios .efecto-gradiente {
+  margin-top: 10px;
+  height: 40px;
+  background: linear-gradient(to right, #348f50, #56b4d3);
+}
+.main-servicios .card:hover {
+  transform: translate(20px, -10px);
+  transform: scale(1.1);
+  transition: 2s;
+}
 .main-servicios .imagenes-internas {
   display: flex;
   flex-wrap: wrap;
@@ -145,7 +211,21 @@ header .padd-0 {
   height: 130px;
   padding: 10px;
 }
+.main-servicios .imagenes-internas .card .descripcion-ss p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Kalam", cursive;
+}
 
+.main-portafolio .efecto-gradiente {
+  margin-top: 10px;
+  height: 40px;
+  background: linear-gradient(to right, #348f50, #56b4d3);
+}
 .main-portafolio .grid-galeria {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -155,10 +235,153 @@ header .padd-0 {
   background-color: #D2B4DE;
   padding: 10px;
 }
+.main-portafolio .grid-galeria div {
+  box-shadow: 10px, 10px, 16px, 0px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  overflow: hidden;
+}
 .main-portafolio .grid-galeria img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.main-portafolio .grid-galeria .img1 {
+  position: relative;
+}
+.main-portafolio .grid-galeria .texto1-portafolio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.749), rgba(255, 255, 255, 0.212));
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+  opacity: 0;
+}
+.main-portafolio .grid-galeria .texto1-portafolio:hover {
+  opacity: 1;
+  transition: 1s;
+}
+.main-portafolio .grid-galeria .img2 {
+  position: relative;
+}
+.main-portafolio .grid-galeria .texto2-portafolio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.749), rgba(255, 255, 255, 0.212));
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+  opacity: 0;
+}
+.main-portafolio .grid-galeria .texto2-portafolio:hover {
+  opacity: 1;
+  transition: 1s;
+}
+.main-portafolio .grid-galeria .img3 {
+  position: relative;
+}
+.main-portafolio .grid-galeria .texto3-portafolio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.749), rgba(255, 255, 255, 0.212));
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+  opacity: 0;
+}
+.main-portafolio .grid-galeria .texto3-portafolio:hover {
+  opacity: 1;
+  transition: 1s;
+}
+.main-portafolio .grid-galeria .img4 {
+  position: relative;
+}
+.main-portafolio .grid-galeria .texto4-portafolio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.749), rgba(255, 255, 255, 0.212));
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+  opacity: 0;
+}
+.main-portafolio .grid-galeria .texto4-portafolio:hover {
+  opacity: 1;
+  transition: 1s;
+}
+.main-portafolio .grid-galeria .img5 {
+  position: relative;
+}
+.main-portafolio .grid-galeria .texto5-portafolio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.749), rgba(255, 255, 255, 0.212));
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+  opacity: 0;
+}
+.main-portafolio .grid-galeria .texto5-portafolio:hover {
+  opacity: 1;
+  transition: 1s;
+}
+.main-portafolio .grid-galeria .img6 {
+  position: relative;
+}
+.main-portafolio .grid-galeria .texto6-portafolio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.749), rgba(255, 255, 255, 0.212));
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+  opacity: 0;
+}
+.main-portafolio .grid-galeria .texto6-portafolio:hover {
+  opacity: 1;
+  transition: 1s;
 }
 
 footer {
@@ -171,7 +394,7 @@ footer {
 @media screen and (max-width: 991px) {
   .menu {
     position: absolute;
-    top: 152px;
+    top: 110px;
     background-color: aliceblue;
     width: 100vw;
   }

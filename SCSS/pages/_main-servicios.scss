@@ -1,4 +1,14 @@
 .main-servicios {
+    .efecto-gradiente{
+        margin-top: 10px;
+        height: 40px;
+        background: linear-gradient(to right, #348f50, #56b4d3);
+    }
+    .card:hover{
+transform: translate(20px,-10px);
+transform: scale(1.1);
+transition: 2s;
+    }
     .imagenes-internas {
         display: flex;
         flex-wrap: wrap;
@@ -32,6 +42,13 @@
                 height: 130px;
                 padding: 10px;
             }
+            .descripcion-ss{            
+                p{
+                    @include flex(column,center,center);
+                    text-align: center;
+                    font-size: 15px;
+                    font-family:  'Kalam', cursive;
+            }
         }
     }
-}
+}}
